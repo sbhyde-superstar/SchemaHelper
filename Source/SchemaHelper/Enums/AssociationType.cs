@@ -17,7 +17,7 @@ namespace CodeSmith.SchemaHelper {
         OneToMany = 1,
 
         /// <summary>
-        /// Returns a list of all One to Many keys.
+        /// Returns a list of all Zero or One to Many keys.
         /// </summary>
         ZeroOrOneToMany = 2,
 
@@ -27,7 +27,7 @@ namespace CodeSmith.SchemaHelper {
         ManyToMany = 4,
 
         /// <summary>
-        /// Returns a list of all One to Zero or one keys.
+        /// Returns a list of all Many to Zero or One keys.
         /// </summary>
         ManyToZeroOrOne = 8,
 
@@ -37,8 +37,14 @@ namespace CodeSmith.SchemaHelper {
         OneToZeroOrOne = 16,
 
         /// <summary>
-        /// Returns a list of all One to Zero or one keys.
+        /// Returns a list of all One to One or one keys.
         /// </summary>
-        OneToOne = 32
+        OneToOne = 32,
+
+        /// <summary>
+        /// Returns a list of all Zero or One to one keys.
+        /// </summary>
+        ZeroOrOneToOne = 64
+
     }
 }
